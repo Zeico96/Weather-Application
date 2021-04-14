@@ -1,0 +1,17 @@
+   <div class="col-lg-offset-1">
+        <img id="imgLogo" src="" style="height: 500px; width: 500px;" alt="Image" />
+    </div>
+<input placeholder="Enter some text" name="name"/>
+<p id="values"></p>
+
+<script>
+const input = document.querySelector('input');
+const log = document.getElementById('values');
+
+input.addEventListener('input', updateValue);
+
+function updateValue(e) {
+  document.getElementById("imgLogo").src = e.target.value;
+}
+</script>
+<! -- https://images-na.ssl-images-amazon.com/images/I/71c5CWgwxpL._AC_SX522_.jpg -->
